@@ -238,7 +238,13 @@ def predict_match_score(similarity_metrics):
 
 # Streamlit UI
 st.title("📄 AI-Powered Resume Optimization System")
-st.write("Upload your resume for recommendations")
+# Introduction
+st.write("""
+This app helps **students and job seekers** instantly optimize their resumes to match job descriptions and pass **Applicant Tracking Systems (ATS)**.
+
+
+Upload your **PDF/DOCX resume**, enter a **job description**, and get **instant improvements** with AI-driven suggestions. 🚀
+""")
 
 # File Upload
 uploaded_file = st.file_uploader("Upload Resume (PDF or DOCX)", type=["pdf", "docx"])
