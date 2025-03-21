@@ -11,7 +11,7 @@ from docx import Document  # For DOCX text extraction
 nlp = spacy.load("en_core_web_sm")
 
 # Force re-download and cache the model
-model = SentenceTransformer("all-mpnet-base-v2")
+sentence_model = SentenceTransformer("all-mpnet-base-v2")
 print("✅ Model downloaded and cached successfully!")
 
 
