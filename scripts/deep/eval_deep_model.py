@@ -9,7 +9,11 @@ from docx import Document  # For DOCX text extraction
 
 # Load NLP tools
 nlp = spacy.load("en_core_web_sm")
-sentence_model = SentenceTransformer("all-MiniLM-L6-v2")
+
+# Force re-download and cache the model
+model = SentenceTransformer("all-mpnet-base-v2")
+print("✅ Model downloaded and cached successfully!")
+
 
 def extract_text_from_pdf(pdf_path):
     """Extracts text from a PDF file."""
